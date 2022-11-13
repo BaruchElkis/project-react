@@ -9,7 +9,7 @@ export default function Albums() {
    
     //  setUser(user)
 
-    useEffect(() => {
+    useEffect(() => { 
         fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/albums`)
             .then(res => res.json())
             .then(data => setAlbums(data)) 
